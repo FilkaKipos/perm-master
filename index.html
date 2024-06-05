@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="shortcut icon" href="img/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="navbar">
+        <ul class="nav justify-content-center" style="--bs-nav-link-color: #fafafa;">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#main-forwhat"><strong>Начать</strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#footer"><strong>Фотографии</strong></a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="head-text" data-aos="zoom-in">
+            <div class="container">
+                <img src="/img/mishka.jpg" class="rounded mx-auto d-block img-head" alt="..." style=" margin-bottom: 3vh; max-width: 30%;">
+                <h1 style="font-size: 2.2em; color: #004827;"><strong>Пермь - источник вдохновения</strong></h1>
+                <p style="font-size: 1em; font-weight: 600; color: #004827; margin-bottom: 3vh;"> Взгляни на самые значимые достопримечательности прикамья</p>
+                <button type="button" class="btn btn-primary" style="--bs-btn-bg: #F6D8CE; --bs-btn-border-color: #ffffff; --bs-btn-hover-bg: #d49197;">
+                    <a href="#main-forwhat" style="color: #c59ef1; text-decoration: none;"><strong>Смотреть</strong></a>
+                </button>                
+            </div>
+        </div>
+
+        <div class="main-forwhat"  style="background-color: #ae9ff0; color: #ffffff;" id="main-forwhat">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4" style="padding-top: 5vh; padding-bottom: 5vh;" id="main-forwhat">
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <div class="card h-100">
+                            <img src="/img/pic1.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Красота вокруг</h5>
+                                <p class="card-text">Интересные места, которые можно посетить вокруг вас</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <div class="card h-100">
+                            <img src="/img/pic2.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Разнообразие для выбора</h5>
+                                <p class="card-text">Мы предлагаем вам разные виды достопремичательностей на любой вкус.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <div class="card h-100">
+                            <img src="/img/pic3.svg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Удобство для изучения</h5>
+                                <p class="card-text">Каждая карточка имеет краткое описание и фото, чтобы вы смогли заранее определиться с выбором маршрута.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="margin-top: 1vh; padding-bottom: 5vh;">
+                <div class="class-selection" >
+                    <h2 style="margin-bottom: 5vh;"  data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" id="class-selection">Взгляни на самые значимые достопримечательности прикамья</h2>
+                    <div class="border-col" style="border: #ffffff solid 2px; border-radius: 20px;" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                        <div class="row row-cols-1 row-cols-md-1 g-4" style="padding-top: 2vh; padding-bottom: 2vh;">
+                            <div class="col">
+                                <button type="button" class="btn btn-primary class-btn bigger-btn" style="background-color: #ffffff; border: 1px solid #ffffff; --bs-btn-hover-color: #d49197;" onclick="location.href='html/card.html'">Перейти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer style="padding-bottom: 5vh;">
+        <div class="container">
+            <footer id="footer">
+                <h2 style="text-align: center; padding-bottom: 3vh;" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"><strong>Фотографии Перми</strong></h2>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="/img/list-pic1.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/list-pic2.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/list-pic3.svg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/list-pic4.svg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </footer>
+    
+
+    <script src="script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
